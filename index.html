@@ -1,48 +1,166 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+<title>Example</title>
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style3.css">
   <script src="https://use.fontawesome.com/982a476944.js"></script>
 </head>
 
+<style>
+
+
+html {
+
+font-family: "Baskerville Old Face"
+}
+
+.container_primary {
+/* align-self: stretch;
+align-items: center; */
+margin-top: 120px;
+transform: translateY(100);
+  }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: center;
+  }
+
+.sub{
+  box-sizing: border-box;
+  height: 160px;
+}
+.red {
+  background: orangered;
+  /* display: flex;
+  flex-direction: column; */
+
+}
+.green {
+  background: yellowgreen;
+
+}
+.blue {
+  background: steelblue;
+
+}
+
+
+.imageWrap{
+  height: inherit;
+}
+
+.overlap{
+  position: absolute;
+height: 160px;
+width: 600px;
+}
+
+.sub2{
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+select, optgroup, option{
+
+background-color:transparent;
+  color: black;
+  border: 0px;
+  border-color: transparent;
+  font-size: 3vh;
+  width: 10vw;
+  overflow: hidden;
+   white-space: pre;
+   text-overflow: ellipsis;
+   outline: none;
+}
+
+select {
+    position:sticky;
+text-decoration: underline;
+background-color:transparent;
+color:transparent;
+height: inherit;
+width: 600px;
+text-align: center;
+
+}
+/*
+section{
+  height: 100vh;
+ width: 200px;
+  border: 1px solid #2d2d2dff;
+  margin-bottom: 12px;
+
+} */
+
+#populator2{
+  position: absolute;
+height: 160px;
+width: 600px;
+  text-align: center;
+  align-items: center;
+    font-size: 60px;
+    transform: translate(0px, 60px);
+    color: darkgrey;
+
+}
+
+#populator3{
+  height: 160px;
+  width: 600px;
+  text-align: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+
+
+
+
+</style>
 <body>
-  <div class = "fullFrame">
-  <!-- <iframe src="https://player.vimeo.com/video/412220255" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+<div class="container_primary">
+<div class="container">
+  <div class="red sub">
+    <img class="imageWrap" id="img1" src="Text_the.jpg" alt="The">
+    <!-- <div class="green">1a</div>
+    <div class="blue">1b</div> -->
   </div>
+  <div class="green sub">
+    <img class="imageWrap" id="img2" src="Text_Chronicle.jpg" alt="Chronic">
 
-<div class = "fullFrame">
-  <section>
-    <div class="column-center">
-      <label for="A"><b>The Chronicle of &#60;</b></label>
-      <div id="populator">
-      <div id="populator1" class="absDivs"><b>_ _ _ _ _ _</b></div>
-      <div id="populator2" class="absDivs"></div>
-      <div id="populator3" class="absDivs">
-      <select name="A" id="selector" onchange="changeSelection()">
-        <option value=""></option>
-        <option value="https://vimeo.com/412220255">Open season</option>
-        <option value="">Slip</option>
-            <option value="">Drawn Transverse</option>
+  </div>
+  <div class="blue sub">
+      <img class="imageWrap" id="img3" src="Text_Of.jpg" alt="Of">
+    </div>
+    <div class="blue sub sub2">
+      <div class="overlap">
+            <div id="populator2" class="absDivs"></div>
+            <div id="populator3" class="absDivs">
+            <select name="A" id="selector" onchange="changeSelection()">
+              <option value=""></option>
+              <option value="https://vimeo.com/412220255">Open season</option>
+              <option value="">Slip</option>
+              <option value="">Dawn Transverse</option>
+            </select>
+          </div>
 
-      </select>
-    </div>
-    </div>
-      <!-- <input type="submit" value="Submit"> -->
 
-      <b>&#62;&nbsp;</b>
-      <i id="glower" class="fa fa-step-forward" onclick="moveOn()"></i>
     </div>
-  </section>
+      <img class="imageWrap" id="img4" src="Text_Brackets.jpg" alt="< _ _ _ _ >">
+      </div>
+
+      <div class="defaultGlow">
+        <i id="glower" class="fa fa-step-forward" onclick="moveOn()"></i>
+        </div>
+  <script src="textTransformer2.js"></script>
 </div>
-
-
-
-  <script src="textTransformer.js"></script>
-
-
+</div>
 </body>
-
 </html>

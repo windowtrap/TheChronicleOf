@@ -10,10 +10,10 @@ function changeSelection(){
   var url = e.options[e.selectedIndex].value;
 
     console.log(url);
-   //
-   // window.location.href = url;
-  //
-  // document.getElementById("glower").classList.add("glow");
+
+
+
+  document.getElementById("glower").classList.add("glow");
 
 }
 
