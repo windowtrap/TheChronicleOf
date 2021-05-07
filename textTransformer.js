@@ -10,8 +10,8 @@ function changeSelection(){
   var url = e.options[e.selectedIndex].value;
 
     console.log(url);
-   //
-   // window.location.href = url;
+
+
 
   document.getElementById("glower").classList.add("glow");
 
@@ -19,5 +19,6 @@ function changeSelection(){
 
 function moveOn(){
 var e = document.getElementById("selector");
-  window.location.href = e.options[e.selectedIndex].value;
+//  window.location.href = e.options[e.selectedIndex].value;
+  newWindow = window.open(e.options[e.selectedIndex].value);
 }

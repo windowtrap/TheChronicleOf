@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+font-family: "Baskerville Old Face"
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+select, optgroup, option{
+
+background-color:#2d2d2dff;
+  color: white;
+  border: 0px;
+  border-color: transparent;
+  font-size: 3vh;
+  width: 10vw;
+  overflow: hidden;
+   white-space: pre;
+   text-overflow: ellipsis;
+   outline: none;
+}
+
+select {
+    position:sticky;
+text-decoration: underline;
+background-color:transparent;
+color:transparent;
+height: inherit;
+
+}
+
+section{
+  height: 100vh;
+  /* width: 200px; */
+  border: 1px solid #2d2d2dff;
+  margin-bottom: 12px;
+
+}
+
+#populator{
+  font-size: 2vw;
+  width: 10vw;
+  /* vertical-align: middle; */
+}
+
+#populator1{
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%,30%);
+}
+
+
+#populator2{
+  word-wrap: break-word;
+      text-align: center;
+      vertical-align: middle;
+}
+
+#populator3{
+height:10vw;
+}
+
+.absDivs {
+  position: absolute;
+  width: inherit;
+}
+
+
+
+.fullFrame{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+
+
+
+
+
+
+/* centering with CSS Grid */
+.column-center {
+  display: grid;
+  justify-content: center;
+  gap: 4px;
+  align-content: center;
+  grid-auto-flow: column;
+  height: 100vh;
+  font-size: 10vh;
+  color: #fff;
+  background: #2d2d2dff;
+  padding: 12px;
+
+}
+
+.item-center {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 4px;
+  align-items: center;
+  justify-items: center;
+}
+
+#glower{
+  font-size: 7vh;
+  transform: translate(0, 2.5vh);
+}
+
+.glow{
+  /* font-size: 80px;
+  color: #fff;
+  text-align: center; */
+  -webkit-animation: glow 1.3s ease-in-out infinite alternate;
+  -moz-animation: glow 1.3s ease-in-out infinite alternate;
+  animation: glow 1.3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+color: white;
+  }
+  to {
+  color: transparent;
+  }
+}
