@@ -3,34 +3,32 @@
   z-index: 100;
 }
 .backButton{
-max-width: 4vw;
+max-width: 100%;
 }
 
 .image{
-  width: 5%;
-  height: 100%;
+  width: 5vh;
+  height: 5vh;
   position: absolute;
   z-index: 40;
   color: black;
   background-color: rgba(255,255,255,0.9);
 }
 
-.sideImage{
-  max-width: 95%;
-  padding: 10px;
+.text{
+  margin-left: 20px;
 }
 
-#text{
-  display:none;
-  padding-left: 10px;
+.textBefore{
+display:none;
 }
 
-
-.image:hover > #text{
-display: inline;
-  margin-top: 10%;
-}
-
-.image:hover{
+.imageClicked{
   width: 50%;
+  height: 90%;
+}
+
+.sideImage{
+  max-width: 90%;
+  padding: 10px;
 }
