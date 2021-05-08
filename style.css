@@ -1,27 +1,21 @@
-
-#glower{
-  font-size: 7vh;
-  transform: translate(0, 2.5vh);
-}
-.defaultGlow{
-  color: transparent;
-  padding-left: 30px;
-  padding-top: 30px;
+#img5{
+  opacity: 0;
 }
 
 .glow{
-  font-size: 80px;
-  color: white;
-  text-align: center;
-  -webkit-animation: glow 1.3s ease-in-out infinite alternate;
-  -moz-animation: glow 1.3s ease-in-out infinite alternate;
-  animation: glow 1.3s ease-in-out infinite alternate;
+  /* font-size: 80px;
+  color: #fff;
+  text-align: center; */
+  -webkit-animation: opacity 1.3s ease-in-out infinite alternate;
+  -moz-animation: opacity 1.3s ease-in-out infinite alternate;
+  animation: opacity 1.3s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@-webkit-keyframes opacity {
   from {
-color: darkgrey;
+opacity: 0.05;
   }
   to {
-  color: transparent;
+opacity: 1;
   }
+}

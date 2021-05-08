@@ -13,7 +13,7 @@ function changeSelection(){
 
 
 
-  document.getElementById("glower").classList.add("glow");
+  document.getElementById("img5").classList.add("glow");
 
 }
 
