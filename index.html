@@ -1,165 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <title>Example</title>
+
 <head>
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://use.fontawesome.com/982a476944.js"></script>
 </head>
 
-<style>
 
-
-html {
-
-font-family: "Baskerville Old Face"
-}
-
-.container_primary {
-/* align-self: stretch;
-align-items: center; */
-margin-top: 120px;
-transform: translateY(100);
-  }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-justify-content: center;
-  }
-
-.sub{
-  box-sizing: border-box;
-  height: 160px;
-}
-.red {
-  background: orangered;
-  /* display: flex;
-  flex-direction: column; */
-
-}
-.green {
-  background: yellowgreen;
-
-}
-.blue {
-  background: steelblue;
-
-}
-
-
-.imageWrap{
-  height: inherit;
-}
-
-.overlap{
-  position: absolute;
-height: 160px;
-width: 600px;
-}
-
-.sub2{
-  display: flex;
-justify-content: center;
-align-items: center;
-}
-
-select, optgroup, option{
-
-background-color:transparent;
-  color: black;
-  border: 0px;
-  border-color: transparent;
-  font-size: 3vh;
-  width: 10vw;
-  overflow: hidden;
-   white-space: pre;
-   text-overflow: ellipsis;
-   outline: none;
-}
-
-select {
-    position:sticky;
-text-decoration: underline;
-background-color:transparent;
-color:transparent;
-height: inherit;
-width: 600px;
-text-align: center;
-
-}
-/*
-section{
-  height: 100vh;
- width: 200px;
-  border: 1px solid #2d2d2dff;
-  margin-bottom: 12px;
-
-} */
-
-#populator2{
-  position: absolute;
-height: 160px;
-width: 600px;
-  text-align: center;
-  align-items: center;
-    font-size: 60px;
-    transform: translate(0px, 60px);
-    color: darkgrey;
-
-}
-
-#populator3{
-  height: 160px;
-  width: 600px;
-  text-align: center;
-  align-items: center;
-  font-size: 50px;
-}
-
-
-
-
-
-</style>
 <body>
-<div class="container_primary">
-<div class="container">
-  <div class="red sub">
-    <img class="imageWrap" id="img1" src="Text_the.jpg" alt="The">
-    <!-- <div class="green">1a</div>
-    <div class="blue">1b</div> -->
-  </div>
-  <div class="green sub">
-    <img class="imageWrap" id="img2" src="Text_Chronicle.jpg" alt="Chronic">
 
-  </div>
-  <div class="blue sub">
-      <img class="imageWrap" id="img3" src="Text_Of.jpg" alt="Of">
+
+    <!-- Initial Elements -->
+    <div class="overall">
+    <div class="container" onclick="hider()" id="primaryDiv">
+      <div class="sub">
+          <img class="imageWrap" id="img1" src="Text_the.jpg" alt="The">
+      </div>
+      <div class="sub">
+        <img class="imageWrap" id="img2" src="Text_Chronicle.jpg" alt="Chronic">
+      </div>
+      <div class="sub">
+        <img class="imageWrap" id="img3" src="Text_Of.jpg" alt="Of">
+      </div>
+      <div class="sub">
+        <img class="imageWrap" id="img4" src="Text_Brackets.jpg" alt="< _ _ _ _ >">
+      </div>
     </div>
-    <div class="blue sub sub2">
-      <div class="overlap">
-            <div id="populator2" class="absDivs"></div>
-            <div id="populator3" class="absDivs">
-            <select name="A" id="selector" onchange="changeSelection()">
-              <option value=""></option>
-              <option value="/openSeason/index.html">Open season</option>
-              <option value='http://drainmag.com/fever-dream/'>the archive fever dream team</option>
-              <option value="">Slip</option>
-              <option value="">Dawn Transverse</option>
-            </select>
-          </div>
+
+
+
+    <!-- Initially Hidden Elements -->
+
+    <div id="secondaryDiv" class="hideMe containerVert">
+
+      <a href="log/openSeason" class='work' id="c001">The chronicle of &#60; an open season &#62;</a>
+      <br>
+      <a href='http://drainmag.com/fever-dream/' class='work' id="c001">The chronicle of &#60; the archive fever dream team &#62;</a>
+      <br>
+      <a href="" class='work' id="c001">The chronicle of &#60; slip &#62;</a>
+      <br>
+      <a href="" class='work' id="c001">The chronicle of &#60; dawn transverse &#62;</a>
+      <br>
+      <a href="" class='work' id="c001">The chronicle of &#60; about &#62;</a>
+      <br>
+      <a href="" class='work' id="c001">The chronicle of &#60; artists &#62;</a>
+
     </div>
-      <img class="imageWrap" id="img4" src="Text_Brackets.jpg" alt="< _ _ _ _ >">
+
       </div>
 
-      <div class="defaultGlow">
-          <img class="imageWrap" id="img5" src="Text_fwd.jpg" alt="-->" onclick="moveOn()">
-        </div>
-  <script src="textTransformer.js"></script>
-</div>
-</div>
+
+  <script src="hider.js"></script>
 </body>
+
 </html>
+
+<!-- https://codepen.io/ribluc/pen/XjdOyE -->
