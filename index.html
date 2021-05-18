@@ -16,16 +16,16 @@
   <div class="overall">
     <div class="container" onclick="hider()" id="primaryDiv">
       <div class="sub">
-        <img class="imageWrap" id="img1" src="Text_the.jpg" alt="The">
+        <img class="imageWrap" id="img1" src="Text_the_lc.jpg" alt="The">
       </div>
       <div class="sub">
-        <img class="imageWrap" id="img2" src="Text_Chronicle.jpg" alt="Chronic">
+        <img class="imageWrap" id="img2" src="Text_Chronicle_lc.jpg" alt="Chronic">
       </div>
       <div class="sub">
-        <img class="imageWrap" id="img3" src="Text_Of.jpg" alt="Of">
+        <img class="imageWrap" id="img3" src="Text_Of_lc.jpg" alt="Of">
       </div>
       <div class="sub">
-        <img class="imageWrap" id="img4" src="Text_Brackets.jpg" alt="< _ _ _ _ >">
+        <img class="imageWrap" id="img4" src="Text_Brackets_lc.jpg" alt="< _ _ _ _ >">
       </div>
     </div>
 
@@ -39,13 +39,34 @@
       <br>
       <a href='http://drainmag.com/fever-dream/' class='work' id="c002">The chronicle of &#60; the archive fever dream team &#62;</a>
       <br>
-      <a href="" class='work' id="c003">The chronicle of &#60; slip &#62;</a>
-      <br>
       <a href="" class='work' id="c004">The chronicle of &#60; dawn transverse &#62;</a>
       <br>
       <a class='work' id="c005" onclick="unfoldAbout()">The chronicle of &#60; about &#62;</a>
       <br>
-      <a href="" class='work' id="c006">The chronicle of &#60; artists &#62;</a>
+      <a class='work' id="c006" onclick="unfoldArtists()">The chronicle of &#60; artists &#62;</a>
+
+    </div>
+
+    <div id="artistsDiv" class=" c8 hideMe containerVert2">
+    <b>Bruce E Phillips</b>
+    <a href='http://drainmag.com/fever-dream/' class='workSmall'>The chronicle of &#60; the archive fever dream team &#62;</a>
+    <a href='https://bruceephillips.com' class='url'>https://bruceephillips.com</a>
+    <br>
+    <br>
+
+    <b>Eugene Hansen (Maniapoto)</b>
+    <a href='http://drainmag.com/fever-dream/' class='workSmall'>The chronicle of &#60; the archive fever dream team &#62;</a>
+    <a href='' class='workSmall'>    The chronicle of < dawn transverse ></a>
+    <a href='https://vjrex.info' class='url'>https://vjrex.info</a>
+    <br>
+    <br>
+
+    <b>Jenny Gillam</b>
+    <a href='http://drainmag.com/fever-dream/' class='workSmall'>The chronicle of &#60; the archive fever dream team &#62;</a>
+    <a href="log/openSeason" class='workSmall' id="c001">The chronicle of &#60; an open season &#62;</a>
+    <a href='https://jennygillam.com' class='url'>  https://jennygillam.com</a>
+    <br>
+    <br>
 
     </div>
 
@@ -121,8 +142,17 @@
       <p class="c1 c4"><span class="c0"></span></p>
 
     </div>
-</div>
   </div>
+
+
+
+</div>
+
+<div id='backIcon' class='icon hideMe' onclick="resetIt()">
+<img src="equals.png" alt="< _ _ _ _ >" onclick="resetIt()">
+</div>
+
+
 
 
   <script src="hider.js"></script>

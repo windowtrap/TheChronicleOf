@@ -47,8 +47,11 @@ position: absolute;
 .sub {
   box-sizing: border-box;
   height: 160px;
+}
 
-
+.icon{
+  z-index: 1000;
+  position: absolute;
 }
 
 
@@ -61,12 +64,21 @@ position: absolute;
 
 
 
-a {
+.work {
   display: block;
   font-size: 30px;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.workSmall {
+  /* display: block;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px; */
   text-decoration: none;
 }
 
