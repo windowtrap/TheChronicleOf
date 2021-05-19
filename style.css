@@ -58,10 +58,20 @@ position: absolute;
   height: 160px;
 }
 
+.sub:hover {
+ cursor:pointer;
+}
+
+
 .icon{
   z-index: 1000;
   position: absolute;
 }
+
+.icon:hover {
+ cursor:pointer;
+}
+
 
 
 .imageWrap {
