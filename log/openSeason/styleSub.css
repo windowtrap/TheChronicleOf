@@ -3,6 +3,10 @@
   z-index: 100;
 }
 .backButton{
+width: 2.4vw;
+mix-blend-mode: darken;
+}
+.expandButton{
 width: 3vw;
 mix-blend-mode: darken;
 }

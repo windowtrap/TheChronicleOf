@@ -14,10 +14,9 @@ function expand(){
     document.getElementById("text").classList.remove("textClicked");
     document.getElementById("expander").classList.remove("imageClicked");
   }
-
 }
 
 function goBack() {
   window.history.back();
-window.top.close();
+setTimeout(hider, 1000);
 }
