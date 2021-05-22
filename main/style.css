@@ -80,13 +80,13 @@ position: absolute;
 
 
 #artistsDiv{
-  font-size: 40px;
+  font-size: 30px;
 }
 
 
 .work {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
