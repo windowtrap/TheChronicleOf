@@ -9,6 +9,7 @@ mix-blend-mode: darken;
 .expandButton{
 width: 3vw;
 mix-blend-mode: darken;
+display: block;
 }
 
 .image{
