@@ -1,0 +1,45 @@
+html, body {
+  font-family: "Baskerville Old Face"
+  height: 100%;
+  width: 100%;
+}
+
+.overall, .video{
+margin: 10px 10px 10px 10px;
+height: 98%;
+width: 98%;
+position: absolute;
+display: flex;
+justify-content: space-around;
+
+}
+
+/* #backIcon{
+  width: 3vmax;
+}
+
+
+#backIcon2{
+  width: 3vmax;
+} */
+
+.container {
+
+  height: 100%;
+  max-width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sub {
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+}
+
+.sub:hover {
+ cursor:pointer;
+}

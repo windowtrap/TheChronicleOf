@@ -12,14 +12,6 @@ mix-blend-mode: darken;
 display: block;
 }
 
-.backButton:hover{
-   cursor:pointer;
-}
-
-.expandButton:hover{
-   cursor:pointer;
-}
-
 .image{
   width: 3vw;
   height: 3vw;
@@ -45,4 +37,9 @@ display:none;
 .sideImage{
   max-width: 90%;
   padding: 10px;
+}
+
+#hiddenVid{
+  position: absolute;
+  display: none;
 }
