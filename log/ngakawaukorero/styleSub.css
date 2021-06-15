@@ -14,6 +14,15 @@ mix-blend-mode: darken;
 display: block;
 }
 
+.backButton:hover{
+   cursor:pointer;
+}
+
+.expandButton:hover{
+   cursor:pointer;
+}
+
+
 .image{
   width: 3vw;
   height: 3vw;
