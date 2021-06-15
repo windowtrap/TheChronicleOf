@@ -13,11 +13,13 @@ position: absolute;
 
 #backIcon{
   width: 3vmax;
+  min-width: 50px;
 }
 
 
 #backIcon2{
   width: 3vmax;
+  min-width: 50px;
 }
 
 .container {

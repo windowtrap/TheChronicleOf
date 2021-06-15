@@ -4,10 +4,12 @@
 }
 .backButton{
 width: 2.4vw;
+min-width: 50px;
 mix-blend-mode: darken;
 }
 .expandButton{
 width: 3vw;
+min-width: 50px;
 mix-blend-mode: darken;
 display: block;
 }
