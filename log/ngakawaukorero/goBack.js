@@ -32,6 +32,18 @@ function openVideo(sel) {
   document.getElementById("primaryDiv").style.display = 'none';
   document.getElementById("hiddenVid").style.display = 'block';
   document.getElementById("hiddenVid").style.height = '90%';
+
+  if (sel == 0){
+      document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561256762?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+  } else if (sel == 1){
+  document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561257543?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+} else if (sel == 1){
+document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561258601?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+} else {
+  document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561259956?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+}
+
+
 }
 
 function closeVideo() {
