@@ -5,35 +5,28 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="styleSub.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://use.fontawesome.com/982a476944.js"></script>
   <script src="https://player.vimeo.com/api/player.js"></script>
 </head>
 
 <body>
 
-<div id="expander" class="image">
+  <div id="expander" class="image">
 
     <img class="backButton" src="back.jpg" onclick="goBack()">
-        <img class="expandButton" src="equals.png" onclick="expand()">
+    <img class="expandButton" src="equals.png" onclick="expand()">
 
-<!-- <img class="backButton" src="Text_bk.png" onclick=goBack()> -->
+    <!-- <img class="backButton" src="Text_bk.png" onclick=goBack()> -->
 
-<div id="text" class="textBefore text">
+    <div id="text" class="textBefore text">
 
       <br>
       <i></i>
       <br>
+      <div id="titleWork">Ngakawau kōrero</div>
+      <br>
       Noel Meek, 2021.
-      <br>
-      <br>
-      Ngakawau kōrero
-      <br><br>
-      Iron_1
-      <br>
-      Punga<br>
-      River<br>
-      Stone
       <br><br>
       <!-- <img class="sideImage" src="National Duck and Goose Calling Competition Taupō 2017.jpg"> -->
       <br>
@@ -44,17 +37,21 @@
 
 
   <div class="overall" id="overall">
-<iframe id="hiddenVid" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Iron_1.mp4"></iframe>
+    <iframe id="hiddenVid" src="" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Iron_1.mp4"></iframe>
     <div class="container" id="primaryDiv">
       <div class="sub" onclick="openVideo(0)">
-        <img width="500" height="315" src="iron_1.jpg"></img>
-</div>
+        <div class="playButton"><i class="fa fa-play"></i></div>
+        <img width="500" height="315" src="iron_1.jpg"></img></div>
       <div class="sub" onclick="openVideo(1)">
-        <img width="500" height="315" src="punga.jpg"></img>         </div>
+                <div class="playButton"><i class="fa fa-play"></i></div>
+        <img width="500" height="315" src="punga.jpg"></img> </div>
+
       <div class="sub" onclick="openVideo(2)">
-        <img width="500" height="315" src="river.jpg"></img>         </div>
+                <div class="playButton"><i class="fa fa-play"></i></div>
+        <img width="500" height="315" src="river.jpg"></img> </div>
       <div class="sub" onclick="openVideo(3)">
-        <img width="500" height="315" src="stone.jpg"></img>        </div>
+                <div class="playButton"><i class="fa fa-play"></i></div>
+        <img width="500" height="315" src="stone.jpg"></img> </div>
     </div>
 
 

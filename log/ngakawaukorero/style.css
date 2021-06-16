@@ -38,8 +38,19 @@ justify-content: space-around;
 .sub {
   box-sizing: border-box;
   padding: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sub:hover {
  cursor:pointer;
 }
+
+.playButton{
+  position: absolute;
+  font-size: 5vw;
+  color: white;
+}
+
+.
