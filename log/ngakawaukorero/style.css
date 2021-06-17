@@ -53,4 +53,13 @@ justify-content: space-around;
   color: white;
 }
 
+.subTitle{
+  /* position: absolute; */
+  font-size:calc(10px + 0.3vmax);
+  color: black;
+  padding-left: 20px;
+  max-width: 500px;
+}
+
+.
 .
