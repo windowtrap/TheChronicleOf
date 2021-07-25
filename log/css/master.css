@@ -1,0 +1,118 @@
+.overlay{
+  position: absolute;
+  z-index: 100;
+}
+.backButton{
+width: 2.4vw;
+min-width: 100px;
+mix-blend-mode: darken;
+}
+.expandButton{
+width: 3vw;
+min-width: 100px;
+mix-blend-mode: darken;
+display: block;
+}
+
+.backButton:hover{
+   cursor:pointer;
+}
+
+.expandButton:hover{
+   cursor:pointer;
+}
+
+.image{
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  z-index: 40;
+  color: black;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.text{
+  margin-left: 20px;
+}
+
+.textBefore{
+display:none;
+}
+
+.imageClicked{
+  width: 50%;
+  height: 100%;
+}
+
+.sideImage{
+  max-width: 90%;
+  padding: 10px;
+}
+
+#hiddenVid{
+  position: absolute;
+  display: none;
+}
+
+html, body {
+  font-family: "Baskerville Old Face"
+  height: 100%;
+  width: 100%;
+}
+
+.overall, .video{
+margin: 10px 10px 10px 10px;
+height: 98%;
+width: 98%;
+position: absolute;
+display: flex;
+justify-content: space-around;
+
+}
+
+/* #backIcon{
+  width: 3vmax;
+}
+
+
+#backIcon2{
+  width: 3vmax;
+} */
+
+.container {
+
+  height: 100%;
+  max-width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sub {
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub:hover {
+ cursor:pointer;
+}
+
+.playButton{
+  position: absolute;
+  font-size: 5vw;
+  color: white;
+}
+
+.subTitle{
+  /* position: absolute; */
+  font-size:calc(10px + 0.3vmax);
+  color: black;
+  padding-left: 20px;
+  max-width: 500px;
+}
