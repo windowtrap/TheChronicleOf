@@ -2,7 +2,7 @@ html, body {
   font-family: "Baskerville Old Face"
   height: 99%;
   width: 99%;
-    font-size:calc(30px + 0.3vmax);
+    font-size:max(20px, 1.5vmax);
 }
 
 .overall{
@@ -13,13 +13,13 @@ position: absolute;
 
 #backIcon{
   width: 3vmax;
-  min-width: 100px;
+  min-width: 80px;
 }
 
 
 #backIcon2{
   width: 3vmax;
-  min-width: 100px;
+  min-width: 0px;
 }
 
 .container {

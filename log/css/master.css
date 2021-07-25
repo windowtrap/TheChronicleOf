@@ -4,12 +4,12 @@
 }
 .backButton{
 width: 2.4vw;
-min-width: 100px;
+min-width: 80px;
 mix-blend-mode: darken;
 }
 .expandButton{
 width: 3vw;
-min-width: 100px;
+min-width: 80px;
 mix-blend-mode: darken;
 display: block;
 }
@@ -111,7 +111,7 @@ justify-content: space-around;
 
 .subTitle{
   /* position: absolute; */
-  font-size:calc(15px + 0.3vmax);
+  font-size:calc(10px + 0.5vmax);
   color: black;
   padding-left: 20px;
   max-width: 500px;
