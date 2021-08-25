@@ -18,12 +18,12 @@ function expand() {
 }
 
 function goBack() {
-  if (historyCounter > 0){
+  if (historyCounter > 0) {
     location.reload();
   } else {
-      window.history.back();
-  setTimeout(hider, 1000);
-}
+    window.history.back();
+    setTimeout(hider, 1000);
+  }
 
 }
 
@@ -35,25 +35,27 @@ function openVideo(sel) {
   document.getElementById("hiddenVid").style.display = 'block';
   document.getElementById("hiddenVid").style.height = '90%';
 
-  if (sel == 0){
-      document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561256762?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
-  document.getElementById("titleWork").innerHTML="A kōrero with Iron about Climate Change (at Hector Beach as a seawall is constructed)."
+  if (sel == 0) {
+    document.getElementById("hiddenVid").src = "https://player.vimeo.com/video/561256762?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Iron about Climate Change (at Hector Beach as a seawall is constructed).</i> (2021)"
+    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Iron about Climate Change (at Hector Beach as a seawall is constructed)</i>is a with an iron bar that is likely both a remnant of coal mining equipment and also the remains of previous attempts to shore up the beach against the sea. In the background current attempts are underway on a stretch of beach losing up to a metre of foreshore every year (according to my mother’s estimates). It ends with Moana having her say."
+  } else if (sel == 1) {
 
-  } else if (sel == 1){
+    document.getElementById("hiddenVid").src = "https://player.vimeo.com/video/561257543?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Punga about River Health (at the point where Bathurst Resources test water quality).</i> (2021)"
+    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Punga about River Health (at the point where Bathurst Resources test water quality)</i> explores, with a resilient punga, the idea that the owners of the local Stockton coal mine can also be the arbiters of the quality of local river water. The Bathurst employee in charge of this was formerly an employee of the Department of Conservation."
 
-  document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561257543?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
-  document.getElementById("titleWork").innerHTML="A kōrero with Punga about River Health (at the point where Bathurst Resources test water quality)."
+  } else if (sel == 2) {
+    document.getElementById("hiddenVid").src = "https://player.vimeo.com/video/561258601?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Ngakawau River about Energy Production (at the Stockton Mine rail loadout).</i> (2021)"
+    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Ngakawau River about Energy Production (at the Stockton Mine rail loadout)</i> occurs under the Ngakawau Bridge against the sound of a coal train shunting into position across the river. This is really a multiphonic conversation with the river, myself and the various machineries of the rail loadout. Would the Ngakawau River prefer coal or hydro power?."
 
-} else if (sel == 2){
-document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561258601?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
-document.getElementById("titleWork").innerHTML="A kōrero with Ngakawau River about Energy Production (at the Stockton Mine rail loadout)."
+  } else {
 
-} else {
-
-  document.getElementById("hiddenVid").src="https://player.vimeo.com/video/561259956?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
-  document.getElementById("titleWork").innerHTML="A kōrero with Stone about Tourism (on the closed section of the Charming Creek track)."
-
-}
+    document.getElementById("hiddenVid").src = "https://player.vimeo.com/video/561259956?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
+    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Stone about Tourism (on the closed section of the Charming Creek track).</i> (2021)"
+    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Stone about Tourism(on the closed section of the Charming Creek track)</i> takes place with an outlier of a massive slip that closed the Charming Creek walkway in 2020. The slip is very likely linked to higher than normal rainfall caused by a shifting climate in the region. I was particularly curious about Stone’s thoughts on how quiet the area had become as we were behind a large fence that now keeps tourists away from the site."
+  }
 
 
 }
@@ -61,6 +63,6 @@ document.getElementById("titleWork").innerHTML="A kōrero with Ngakawau River ab
 function closeVideo() {
   historyCounter = 0;
   document.getElementById("primaryDiv").style.display = 'block';
-    // document.getElementById("primaryDiv").style.width = '100%';
+  // document.getElementById("primaryDiv").style.width = '100%';
   document.getElementById("hiddenVid").style.display = 'none';
 }
