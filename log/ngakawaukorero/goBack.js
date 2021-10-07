@@ -42,8 +42,8 @@ function openVideo(sel) {
   } else if (sel == 1) {
 
     document.getElementById("hiddenVid").src = "https://player.vimeo.com/video/561257543?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
-    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Punga about River Health (at the point where Bathurst Resources test water quality).</i> (2021)"
-    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Punga about River Health (at the point where Bathurst Resources test water quality)</i> explores, with a resilient punga, the idea that the owners of the local Stockton coal mine can also be the arbiters of the quality of local river water. The Bathurst employee in charge of this was formerly an employee of the Department of Conservation."
+    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Mamaku about River Health (at the point where Bathurst Resources test water quality).</i> (2021)"
+    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Mamaku about River Health (at the point where Bathurst Resources test water quality)</i> explores, with a resilient mamaku, the idea that the owners of the local Stockton coal mine can also be the arbiters of the quality of local river water. The Bathurst employee in charge of this was formerly an employee of the Department of Conservation."
 
   } else if (sel == 2) {
     document.getElementById("hiddenVid").src = "https://player.vimeo.com/video/561258601?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
