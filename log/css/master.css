@@ -49,6 +49,7 @@ display:none;
   padding: 10px;
 }
 
+
 #hiddenVid{
   position: absolute;
   display: none;
@@ -61,11 +62,11 @@ html, body {
 }
 
 .overall, .video{
+display flex;
 margin: 10px 10px 10px 10px;
 height: 98%;
 width: 98%;
 position: absolute;
-display: flex;
 justify-content: space-around;
 
 }
@@ -117,12 +118,20 @@ justify-content: space-around;
   max-width: 500px;
 }
 
-#vid1{
+#vid1, #vid2{
 margin: 0px 0px 0px 0px;
-display: inline-block;
 overflow: hidden;
 position: relative;
-transform: translate(0%, 40%);
-height: 60%;
-width: 49%;
+/* transform: translate(0%, 40%); */
 }
+
+.splitVid{
+display: flex;
+height: 95%;
+}
+
+
+
+.hide {
+  display:none
+};
