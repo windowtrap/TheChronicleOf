@@ -40,6 +40,7 @@ function initiate2() {
 function handleOnline1() {
 
   playState1 = 1;
+      updateStatus();
   document.getElementById("vid1").classList.remove('hide');
       document.getElementById("vid1").classList.add('video');
   player1.removeEventListener(Twitch.Player.ONLINE, handleOnline1);
@@ -50,39 +51,44 @@ function handleOnline1() {
 }
 
 function handleOffline1() {
-
-    console.log("2 init")
+  playState1 = 0;
+  updateStatus();
+  console.log("2 init")
   document.getElementById("vid1").classList.add('hide');
   document.getElementById("vid1").classList.remove('video');
   player1.removeEventListener(Twitch.Player.OFFLINE, handleOffline1);
   player1.addEventListener(Twitch.Player.ONLINE, handleOnline1);
   player1.setMuted(true);
-    updateStatus();
+
 }
 
 function handleOnline2() {
     playState2 = 1;
+        updateStatus();
   console.log("3 init")
   document.getElementById("vid2").classList.remove('hide');
   document.getElementById("vid2").classList.add('video');
   player2.removeEventListener(Twitch.Player.ONLINE, handleOnline2);
   player2.addEventListener(Twitch.Player.OFFLINE, handleOffline2);
   player2.setMuted(false);
-    updateStatus();
+
 }
 
 function handleOffline2() {
   playState2 = 0;
+    updateStatus();
   console.log("4 init")
   document.getElementById("vid2").classList.add('hide');
   document.getElementById("vid2").classList.remove('video');
   player2.removeEventListener(Twitch.Player.OFFLINE, handleOffline2);
   player2.addEventListener(Twitch.Player.ONLINE, handleOnline2);
   player2.setMuted(true);
-  updateStatus();
+
 }
 
 function updateStatus(){
+
+  console.log('updating');
 
 let overallState = playState1 + playState2;
 
