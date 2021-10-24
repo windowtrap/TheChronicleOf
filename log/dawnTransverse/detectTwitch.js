@@ -38,46 +38,58 @@ function initiate2() {
 
 
 function handleOnline1() {
-    console.log("1 init")
 
+  playState1 = 1;
   document.getElementById("vid1").classList.remove('hide');
       document.getElementById("vid1").classList.add('video');
   player1.removeEventListener(Twitch.Player.ONLINE, handleOnline1);
   player1.addEventListener(Twitch.Player.OFFLINE, handleOffline1);
   player1.setMuted(false);
+  updateStatus();
 
-  console.log(player1.getCollection());
-
-  // if(player1.getCollection().includes('Art')){
-  //   console.log("Contains Art")
-  // } else {
-  //   handleOffline1();
-  // }
 }
 
 function handleOffline1() {
+
     console.log("2 init")
   document.getElementById("vid1").classList.add('hide');
-    document.getElementById("vid1").classList.remove('video');
+  document.getElementById("vid1").classList.remove('video');
   player1.removeEventListener(Twitch.Player.OFFLINE, handleOffline1);
   player1.addEventListener(Twitch.Player.ONLINE, handleOnline1);
   player1.setMuted(true);
+    updateStatus();
 }
 
 function handleOnline2() {
-    console.log("3 init")
+    playState2 = 1;
+  console.log("3 init")
   document.getElementById("vid2").classList.remove('hide');
-      document.getElementById("vid2").classList.add('video');
+  document.getElementById("vid2").classList.add('video');
   player2.removeEventListener(Twitch.Player.ONLINE, handleOnline2);
   player2.addEventListener(Twitch.Player.OFFLINE, handleOffline2);
   player2.setMuted(false);
+    updateStatus();
 }
 
 function handleOffline2() {
-    console.log("4 init")
+  playState2 = 0;
+  console.log("4 init")
   document.getElementById("vid2").classList.add('hide');
-      document.getElementById("vid2").classList.remove('video');
+  document.getElementById("vid2").classList.remove('video');
   player2.removeEventListener(Twitch.Player.OFFLINE, handleOffline2);
   player2.addEventListener(Twitch.Player.ONLINE, handleOnline2);
   player2.setMuted(true);
+  updateStatus();
+}
+
+function updateStatus(){
+
+let overallState = playState1 + playState2;
+
+  if (overallState == 0){
+    console.log("BANG");
+      document.getElementById("splitVid").innerHTML = "OFFLINE";
+  } else {
+      document.getElementById("splitVid").innerHTML = "";
+  }
 }
