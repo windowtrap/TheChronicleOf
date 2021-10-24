@@ -1,12 +1,9 @@
-html, body, div {
+html, body {
   font-family: "Baskerville Old Face"
   height: 99%;
   width: 99%;
   font-size:max(30px, 1vmax);
 }
-
-
-
 
 .overall{
 height: 99%;
@@ -36,7 +33,7 @@ position: absolute;
 }
 
 .containerVert {
-  /* height: 99%; */
+  height: 99%;
   min-height: 99%;
   width: 99%;
   min-width: 99%;

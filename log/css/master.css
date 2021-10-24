@@ -57,14 +57,14 @@ display:none;
 
 html, body {
   font-family: "Baskerville Old Face";
-  height: 100%;
-  width: 100%;
+  height: 98%;
+  width: 98%;
 }
 
 .overall, .video{
 display flex;
 margin: 10px 10px 10px 10px;
-height: 98%;
+height: 95%;
 width: 98%;
 position: absolute;
 justify-content: space-around;
