@@ -6,8 +6,6 @@ var options1 = {
   width: '100%',
   height: '100%',
   channel: "Scideways",
-  // Only needed if this page is going to be embedded on other websites
-  //parent: ["embed.example.com", "othersite.example.com"]
 };
 
 //initialSetup2
@@ -15,9 +13,8 @@ var options2 = {
   width: '100%',
   height: '100%',
   channel: "vjrex",
-  // Only needed if this page is going to be embedded on other websites
-  //parent: ["embed.example.com", "othersite.example.com"]
 };
+
 var player1 = new Twitch.Player("vid1", options1);
 var player2 = new Twitch.Player("vid2", options2);
 
@@ -81,7 +78,7 @@ function handleOnline2() {
 function handleOffline2() {
   playState2 = 0;
     updateStatus();
-      console.log("Player 2 Offline")
+  console.log("Player 2 Offline")
   document.getElementById("vid2").classList.add('hide');
   document.getElementById("vid2").classList.remove('video');
   player2.removeEventListener(Twitch.Player.OFFLINE, handleOffline2);
@@ -92,14 +89,14 @@ function handleOffline2() {
 
 function updateStatus(){
 
-  console.log('updating');
-
-let overallState = playState1 + playState2;
-
-  if (overallState == 0){
-    console.log("BANG");
-      document.getElementById("splitVid").innerHTML = "OFFLINE";
-  } else {
-      document.getElementById("splitVid").innerHTML = "";
-  }
+//   console.log('updating');
+//
+// let overallState = playState1 + playState2;
+//
+//   if (overallState == 0){
+//     console.log("BANG");
+//       document.getElementById("splitVid").innerHTML = "OFFLINE";
+//   } else {
+//       document.getElementById("splitVid").innerHTML = "OFFLINE";
+//   }
 }
