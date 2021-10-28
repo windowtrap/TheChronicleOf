@@ -132,7 +132,8 @@ height: 95%;
 
 .stickyOverlay{
   position: absolute;
-  margin: 10%
+  margin-left: 10%;
+  width: 80%;
 }
 
 .hide {
