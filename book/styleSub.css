@@ -75,11 +75,5 @@ image {
 .text {
   color: black;
   font-size: 20px;
-  position: absolute;
-  text-align: center;
-  left: 25%;
-  -webkit-transform: translate(-25%, -25%);
-  -ms-transform: translate(-25%, -25%);
-  transform: translate(-25%, -25%);
   text-align: center;
 }
