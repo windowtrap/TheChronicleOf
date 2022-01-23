@@ -36,7 +36,7 @@ image {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
   max-width: 25%;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
 .column img {
@@ -46,7 +46,7 @@ image {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .column {
     -ms-flex: 50%;
     flex: 50%;
@@ -55,7 +55,7 @@ image {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media (max-width: 500px) {
   .column {
     -ms-flex: 100%;
     flex: 100%;
