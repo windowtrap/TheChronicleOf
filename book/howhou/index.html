@@ -38,12 +38,6 @@ button{
   float: left;
   width: 49%;
 }
-.aboutText{
-  position: absolute;
-  width: 49%;
-  margin-left:50%;
-  margin-top:1%;
-}
 
 /* Hide the images by default */
 .mySlides {
@@ -79,6 +73,8 @@ button{
   content: "";
   display: table;
   clear: both;
+  position: absolute;
+  display: inline;
 }
 
 /* Six columns side by side */
@@ -97,12 +93,46 @@ button{
 .demo:hover {
   opacity: 1;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* font-size: 30px; */
+  /* text-align: center; */
+}
+
+.flex-item-left {
+  /* background-color: #f1f1f1; */
+  padding: 50px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  /* background-color: dodgerblue; */
+  padding: 50px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+
 </style>
 <body>
 
     <img class="backButton" src="../back.jpg" onclick="goBack()">
 
-<div class="container">
+<div class="gallery">
+
+<div class="flex-container">
+
+
+    <div class="flex-item-left">
+
+
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
     <img src="../assets/Howhou1.jpg" style="width:100%">
@@ -150,11 +180,13 @@ button{
       <img class="demo cursor" src="../assets/Howhou5.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
     </div>
 
-  </div>
+
+</div>
 </div>
 
+  <div class="flex-item-right">
 
-<div class="aboutText">
+
 
 <h4>HOW HAO &#8210; CASSANDRA BARNETT (NG&#256;TI RAUKAWA)</h4>
 <br>
@@ -176,9 +208,10 @@ button{
 <i>Related project:</i>
 <h4>The Chronicle of < How Hao ></h2>
 
+</div>
 
+</div>
   </div>
-
 
 <script>
 var slideIndex = 1;
@@ -205,7 +238,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "contents";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
