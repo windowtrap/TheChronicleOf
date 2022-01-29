@@ -190,7 +190,7 @@ button{
 
 
 
-<h4>HOW HAO &#8210; CASSANDRA BARNETT (NG&#256;TI RAUKAWA)</h4>
+<h4>HOW | HAO &#8210; CASSANDRA BARNETT (RAUKAWA)</h4>
 <br>
   27 pages
 <br>
@@ -268,10 +268,38 @@ function showSlides(n) {
           purchase_units: [{
             amount: {
               value: '26.50' // Can reference variables or functions. Example: `value: document.getElementById('...').value`
+            },
+
+            shipping: {
+                options: [
+                    {
+                        id: "SHIP_123",
+                        label: "Shipping NZ wide",
+                        type: "SHIPPING",
+                        selected: true,
+                        amount: {
+                            value: "6.50",
+                            currency_code: "NZD"
+                        }
+                    },
+                    {
+                        id: "SHIP_456",
+                        label: "Pick up in Store",
+                        type: "PICKUP",
+                        selected: false,
+                        amount: {
+                            value: "0.00",
+                            currency_code: "NZD"
+                        }
+                    }
+                ]
             }
+
           }]
         });
       },
+
+
 
       // Finalize the transaction after payer approval
       onApprove: function(data, actions) {
@@ -295,8 +323,11 @@ function showSlides(n) {
           color:   'black',
           shape:   'rect',
           label:   'paypal',
-          tagline: 'false'
+          tagline: 'false',
+          height: 25
         }
+
+
 
 
 
