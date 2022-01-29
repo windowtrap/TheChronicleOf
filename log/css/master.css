@@ -3,13 +3,13 @@
   z-index: 100;
 }
 .backButton{
-width: 2.4vw;
-min-width: 80px;
+width: 6vw;
+min-width: 60px;
 mix-blend-mode: darken;
 }
 .expandButton{
-width: 3vw;
-min-width: 80px;
+width: 6vw;
+min-width: 60px;
 mix-blend-mode: darken;
 display: block;
 }
@@ -75,11 +75,13 @@ justify-content: space-around;
 
 /* #backIcon{
   width: 3vmax;
+  min-width: 80px;
 }
 
 
 #backIcon2{
   width: 3vmax;
+  min-width: 0px;
 } */
 
 .container {
