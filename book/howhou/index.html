@@ -3,8 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
     <link rel="stylesheet" href="../../log/css/master.css">
-    <script src="https://www.paypal.com/sdk/js?client-id=AXmddbGkplsk2fOLVyNpJC8zMdM98qa6ITVqYJo2NQQDK5MLVv47fgN34Cy6OaTtWh3HYEQDDVkta_P4&currency=NZD"></script>
-
+<script src="getValue.js"></script>
 </head>
 <style>
 body {
@@ -22,10 +21,14 @@ img {
 
 button{
   background-color: black;
-  padding: 20px;
+  padding: 10px;
   color: white;
   font-weight: bold;
   font-size: 16px;
+width: 180px;
+border-radius: 5%;
+  text-align: center;
+  vertical-align: center;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
@@ -205,14 +208,29 @@ button{
 <br>
 <br>
 <br>
-  <h4>NZ $26.50</h4>
-  <h6> Price inclusive of GST and NZ shipping </h6>
-
-<h5>PURCHASE A COPY</h5>
 
 
+<h4 class>NZ $20.00</h4>
+
+<h5>Delivery costs outside Aotearoa | New Zealand on request. Please email thechroniclenz@gmail.com</h5>
   <!-- Set up a container element for the button -->
-  <div id="paypal-button-container"></div>
+<br>
+  <div>
+  <label for="SHIPPING"></label>
+
+  <select name="shipping option" id="ship">
+    <option value="" disabled selected >Please choose a shipping option</option>
+    <option value="https://buy.stripe.com/00g9AXh10fMc5Uc6oo">Pick up</option>
+    <option value="https://buy.stripe.com/00g6oL6mmeI8fuMbIJ">Shipping NZ Wide-  $6.50</option>
+
+
+  </select>
+
+  <button type="buy" name="buyButton" onclick="getValue()">Buy</button>
+</div>
+
+
+
 
 
 
@@ -259,79 +277,7 @@ function showSlides(n) {
 }
 </script>
   <script src="../goBack.js"></script>
-  <script>
-    paypal.Buttons({
 
-      // Sets up the transaction when a payment button is clicked
-      createOrder: function(data, actions) {
-        return actions.order.create({
-          purchase_units: [{
-            amount: {
-              value: '26.50' // Can reference variables or functions. Example: `value: document.getElementById('...').value`
-            },
-
-            shipping: {
-                options: [
-                    {
-                        id: "SHIP_123",
-                        label: "Shipping NZ wide",
-                        type: "SHIPPING",
-                        selected: true,
-                        amount: {
-                            value: "6.50",
-                            currency_code: "NZD"
-                        }
-                    },
-                    {
-                        id: "SHIP_456",
-                        label: "Pick up in Store",
-                        type: "PICKUP",
-                        selected: false,
-                        amount: {
-                            value: "0.00",
-                            currency_code: "NZD"
-                        }
-                    }
-                ]
-            }
-
-          }]
-        });
-      },
-
-
-
-      // Finalize the transaction after payer approval
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(orderData) {
-          // Successful capture! For dev/demo purposes:
-          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-          var transaction = orderData.purchase_units[0].payments.captures[0];
-          alert('Transaction ' + transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
-
-          // When ready to go live, remove the alert and show a success message within this page. For example:
-          // var element = document.getElementById('paypal-button-container');
-          // element.innerHTML = '';
-          // element.innerHTML = '<h3>Thank you for your payment!</h3>';
-          // Or go to another URL:  actions.redirect('thank_you.html');
-        });
-      },
-
-
-        style: {
-          layout:  'horizontal',
-          color:   'black',
-          shape:   'rect',
-          label:   'paypal',
-          tagline: 'false',
-          height: 25
-        }
-
-
-
-
-
-    }).render('#paypal-button-container');</script>
 
 </body>
 </html>
