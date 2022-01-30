@@ -2,7 +2,7 @@ html, body {
   font-family: "Baskerville Old Face"
   height: 99%;
   width: 99%;
-  font-size:max(30px, 1vmax);
+  font-size:max(26px, 1vmax);
 }
 
 .overall{
@@ -45,7 +45,7 @@ position: absolute;
 }
 
 .work{
-    line-height: 160%;
+    line-height: 180%;
 }
 
 .containerVert2 {
