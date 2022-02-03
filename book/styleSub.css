@@ -30,9 +30,9 @@ image {
 
 /* Create four equal columns that sits next to each other */
 .column {
-  -ms-flex: 33%; /* IE10 */
-  flex: 33%;
-  max-width: 33%;
+  -ms-flex: 24.5%; /* IE10 */
+  flex: 24.5%;
+  max-width: 24.5%;
   padding: 0 20px;
 }
 
