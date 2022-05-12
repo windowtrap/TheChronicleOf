@@ -47,8 +47,8 @@ function openVideo(sel) {
 
   } else if (sel == 2) {
     document.getElementById("hiddenVid").src = "https://player.vimeo.com/video/561258601?autoplay=1&title=0&byline=0&portrait=0&badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479";
-    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Ngakawau River about Energy Production (at the Stockton Mine rail loadout).</i> (2021)"
-    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Ngakawau River about Energy Production (at the Stockton Mine rail loadout)</i> occurs under the Ngakawau Bridge against the sound of a coal train shunting into position across the river. This is really a multiphonic conversation with the river, myself and the various machineries of the rail loadout. Would the Ngakawau River prefer coal or hydro power?."
+    document.getElementById("titleWork").innerHTML = "<i>A kōrero with Ngākawau River about Energy Production (at the Stockton Mine rail loadout).</i> (2021)"
+    document.getElementById("workDescription").innerHTML = "<i>A kōrero with Ngākawau River about Energy Production (at the Stockton Mine rail loadout)</i> occurs under the Ngākawau Bridge against the sound of a coal train shunting into position across the river. This is really a multiphonic conversation with the river, myself and the various machineries of the rail loadout. Would the Ngākawau River prefer coal or hydro power?."
 
   } else {
 
