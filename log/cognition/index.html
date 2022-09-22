@@ -1,64 +1,68 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
 
+
 <head>
-  <meta charset="utf-8">
-  <title>The chronicle of <cognition></title>
-  <link rel="stylesheet" href="../css/master.css">
-    <link rel="stylesheet" href="styleSub.css">
-  <script src="https://use.fontawesome.com/982a476944.js"></script>
+
+<meta charset="utf-8">
+
+<title>The Chronicle of <cognition></title>
+
+<link rel="stylesheet" href="../css/master.css">
+
+<link rel="stylesheet" href="styleSub.css">
+
+<script src="https://use.fontawesome.com/982a476944.js"></script>
+
 </head>
+
 
 <body>
 
-  <div id="expander" class="image">
+<div id="expander" class="image">
 
-    <img class="backButton" src="back.jpg" onclick="goBack()">
-    <img class="expandButton" src="equals.png" onclick="expand()">
-
-    <!-- <img class="backButton" src="Text_bk.png" onclick=goBack()> -->
-
-    <div id="text" class="textBefore text">
-
-      <br>
-      <i>The chronicle of <cognition> (2022/23)</i>
-      <br>
-      <br>
-      .....
-      <br><br>
-      <!-- <img class="sideImage" src=""> -->
-      <br>
-    </div>
-  </div>
-  <div id="indent">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-	  
-<script src="detectdocs.google.com.js"></script>
-</body>
-	  
-    <iframe src=" https://docs.google.com/spreadsheets/d/e/2PACX-1vTBzjPpUBBosI1hZWLgXlHD3ajZo2ja0NZNn1TWhPnkUycHv2IsMegvB6-IlaL-PHVo9fN8uFnAZ_G4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" id="child-iframe"></iframe>
-<script>
-	let iframe = document.querySelector("#child-iframe");
-
-	window.addEventListener('message', function(e) {
-		// message that was passed from iframe page
-		let message = e.data;
-
-		iframe.style.height = message.height + 'px';
-		iframe.style.width = message.width + 'px';
-	} , false);
-
-
-</html>
-	
-	 
 <img class="backButton" src="back.jpg" onclick="goBack()">
+
+<img class="expandButton" src="equals.png" onclick="expand()">
+
+<!-- <img class="backButton" src="Text_bk.png" onclick=goBack()> -->
+
+<div id="text" class="textBefore text">
+
+
+<br>
+
+<i>Cognition (2022-2023)</i>
+
+<br>
+
+
+<br>
+
+A timeline of potential shifts in the understanding of cognition developed by The Chronicle of < _______ > for the exhibition who can think what can think at 'who can think, what can think' at Te Tuhi, Tāmaki Makaurau in early 2023. 
+The timeline will be periodically updated.
+
+<br><br>
+
+<!-- <img class="sideImage" src=""> -->
+
+<br>
+
+</div>
+
+</div>
+
+<div id="indent">
+
+<br>
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBzjPpUBBosI1hZWLgXlHD3ajZo2ja0NZNn1TWhPnkUycHv2IsMegvB6-IlaL-PHVo9fN8uFnAZ_G4/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+
+<script src="goBack.js"></script>
+
 </body>
+
 </html>
 
-<script src="goback.js"></script>
