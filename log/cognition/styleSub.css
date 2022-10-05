@@ -9,7 +9,7 @@ iframe{
 
 }
 
-function setIframeSize(iframe) {
+{
     var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
     var iframeBody;
     if (iframeDocument) {
