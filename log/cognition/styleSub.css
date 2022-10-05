@@ -9,12 +9,3 @@ iframe{
 
 }
 
-{
-    var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-    var iframeBody;
-    if (iframeDocument) {
-        iframeBody = iframeDocument.querySelector('body');
-        iframeBody.style.overflowY = 'hidden';
-        iframeBody.style.overflowX = 'hidden';
-    }
-}
