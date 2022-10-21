@@ -59,8 +59,8 @@ display:none;
 /* BUG: body at 98% affecting book page */
 html, body {
   font-family: "Helvetica";
-  height: 98%;
-  width: 98%;
+  height: 94%;
+  width: 94%;
 }
 
 .overall, .video{
