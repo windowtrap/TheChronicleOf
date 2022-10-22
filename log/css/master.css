@@ -59,7 +59,7 @@ display:none;
 /* BUG: body at 98% affecting book page */
 html, body {
   font-family: "Helvetica";
-  height: 120%;
+  height: 200%;
   width: 98%;
 }
 
