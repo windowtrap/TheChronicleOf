@@ -1,5 +1,4 @@
-
-#.overlay{
+.overlay{
   position: absolute;
   z-index: 100;
 }
@@ -60,7 +59,7 @@ height: 100%;
 
 }
 
-#iframe{
+iframe{
 
 width: 100%;
 
