@@ -58,8 +58,8 @@ display:none;
 
 /* BUG: body at 98% affecting book page */
 html, body {
-  font-family: "Baskerville Old Face";
-  height: 98%;
+  font-family: "Helvetica";
+  height: 200%;
   width: 98%;
 }
 
