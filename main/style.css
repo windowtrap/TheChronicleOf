@@ -1,5 +1,5 @@
 html, body {
-  font-family: "Baskerville Old Face"
+  font-family: "Helvetica"
   height: 99%;
   width: 99%;
   font-size:max(26px, 1vmax);
@@ -222,7 +222,7 @@ table th {
 }
 
 .c5 {
-  color: #4472c4;
+  color: #686868;
   font-weight: 400;
   text-decoration: none;
   vertical-align: baseline;
