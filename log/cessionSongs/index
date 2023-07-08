@@ -10,7 +10,24 @@
   <body>
 
     <div class="fullscreenImg">
-    <img src="cession songs Olivia Webb 01.pdf" alt="">
+<img src="cession songs 01.jpg" alt="">
+<br>
+<img src="cession songs 02.jpg" alt="">
+<br>   
+<img src="cession songs 03.jpg" alt="">
+<br>    
+<img src="cession songs 04.jpg" alt="">
+<br>    
+<img src="cession songs 05.jpg" alt="">
+<br>    
+<img src="cession songs 06.jpg" alt="">
+<br>    
+<img src="cession songs 07.jpg" alt="">
+<br>
+<img src="cession songs 08.jpg" alt="">
+<br>    
+<img src="cession songs 09.jpg" alt="">
+<br>
     </div>
     <br>
     <img class="backButton" src="back.jpg" onclick="goBack()">
