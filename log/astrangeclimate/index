@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
-  <title>The Chronicle of < a strange climate ></title>
+  <title>The Chronicle of <astrangeclimate></title>
   <link rel="stylesheet" href="../css/master.css">
   <script src="https://use.fontawesome.com/982a476944.js"></script>
 </head>
@@ -33,8 +32,10 @@
   </div>
 
 
-  <script src="goBack.js"></script>
 </body>
 
-</html>
+</html>  
+
+<script src="goBack.js"></script>
+
 
