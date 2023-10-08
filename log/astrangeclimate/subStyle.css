@@ -1,21 +1,50 @@
-body{
-  display: block;
-  overflow: hidden;
+.overlay{
+  position: absolute;
+  z-index: 100;
 }
-
-.fullscreenImg{
-  max-width: 100%;
-  max-height: 90%;
-}
-
-img{
-  max-width: 100%;
-  max-height: 90%;
-}
-
 .backButton{
-   position: absolute;
-   top: 0;
-   left: 0;
+width: 2.4vw;
+min-width: 50px;
+mix-blend-mode: darken;
+}
+.expandButton{
+width: 3vw;
+min-width: 50px;
+mix-blend-mode: darken;
+display: block;
+}
 
+.backButton:hover{
+   cursor:pointer;
+}
+
+.expandButton:hover{
+   cursor:pointer;
+}
+
+.image{
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  z-index: 40;
+  color: black;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.text{
+  margin-left: 20px;
+}
+
+.textBefore{
+display:none;
+}
+
+.imageClicked{
+  width: 50%;
+  height: 100%;
+}
+
+.sideImage{
+  max-width: 90%;
+  padding: 10px;
 }
