@@ -3,6 +3,11 @@ body{
   /* overflow: hidden; */
 }
 
+#indent{
+  margin-left: 10%;
+  width: 90%;
+}
+
 .fullscreenImg{
   max-width: 100%;
   max-height: 100%;
@@ -11,11 +16,6 @@ body{
 img{
   max-width: 100%;
   max-height: 90%;
-}
-
-#indent{
-  margin-left: 10%;
-  width: 90%;
 }
 
 .backButton{
