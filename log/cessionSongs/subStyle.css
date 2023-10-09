@@ -13,6 +13,11 @@ img{
   max-height: 90%;
 }
 
+#indent{
+  margin-left: 10%;
+  width: 90%;
+}
+
 .backButton{
    position: absolute;
    top: 0;
