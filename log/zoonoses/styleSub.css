@@ -1,21 +1,5 @@
-body{
-  display: block;
-  overflow: hidden;
-}
 
-.fullscreenImg{
-  max-width: 100%;
-  max-height: 90%;
-}
-
-img{
-  max-width: 100%;
-  max-height: 90%;
-}
-
-.backButton{
-   position: absolute;
-   top: 0;
-   left: 0;
-
+#indent{
+  margin-left: 10%;
+  width: 90%;
 }
