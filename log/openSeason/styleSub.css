@@ -48,3 +48,9 @@ display:none;
   max-width: 90%;
   padding: 10px;
 }
+
+
+#indent{
+  margin-left: 10%;
+  width: 90%;
+}
