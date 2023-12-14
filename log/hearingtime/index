@@ -1,0 +1,102 @@
+let osc, noise, env, snapper, snap_env, pitchenv, thought, blink, snap, emptiness, isThinking, isBlinking, isSnapping, blink_interval, snap_interval;
+
+function setup() {
+  //createCanvas(20, 20);
+  noCanvas();
+
+  osc = new p5.Oscillator("sine");
+  osc.freq(55, 0.01);
+  osc.amp(0, 0.001);
+  noise = new p5.Noise();
+  noise.start();
+  noise.amp(0, 0.001);
+  env = new p5.Envelope();
+  env.setADSR(0.001, 0.0, 0.1, 0.018);
+  env.setRange(0.05, 0);
+  snapper = new p5.Oscillator('triangle');
+  snapper.start();
+  snapper.amp(0, 0.001);
+  snapper.freq(3520, 0.01);
+  pitchenv = new p5.Envelope();
+  pitchenv.setADSR(0.1, 1, 1, 1);
+  pitchenv.setRange(1, 0);
+  snap_aenv = new p5.Envelope();
+  snap_aenv.setADSR(0.01, 0.0, 0.1, 0.36);
+  snap_aenv.setRange(0.001, 0);
+  
+  thought = createButton("thought");
+  thought.mouseReleased(playThoughts);
+  thought.position((thought.width*2), 0, 'relative');
+  blink = createButton("blink moment");
+  blink.mouseReleased(blinkMoments);
+  blink.position(40, blink.height*1.5, 'relative');
+  snap = createButton("snap of a finger");
+  snap.mouseReleased(snapFinger);
+  snap.position(-60, snap.height*3, 'relative');
+  emptiness = createButton("emptiness");
+  emptiness.mouseReleased(empty);
+  emptiness.position(-155, emptiness.height*4.5, 'relative');
+
+  isThinking = false;
+  isBlinking = false;
+  isSnapping = false;
+  blink_interval = 360;
+  snap_interval = 7200;
+}
+
+function draw() {
+  background(220);
+  
+  let cTime = millis();
+
+  if (isBlinking) {
+    if (cTime > blink_interval) {
+      env.play(noise);
+      blink_interval = cTime + 360;
+    }
+  }
+  
+  if (isSnapping) {
+    if (cTime > snap_interval) {
+      //snapper.freq(pitchenv);
+      snap_aenv.play(snapper);
+      snap_interval = cTime + 7200;
+    }
+  }
+}
+
+function playThoughts() {
+  isThinking = !isThinking;
+  if (isThinking) {
+    osc.start();
+    osc.freq(55, 0.01);
+    osc.amp(0.5, 0.018);
+  } else {
+    osc.amp(0, 0.018);
+  }
+}
+
+function blinkMoments() {
+  isBlinking = !isBlinking;
+  if (isBlinking) {
+    blink_interval = 0;
+  }
+}
+
+function snapFinger() {
+  isSnapping = !isSnapping;
+  if (isSnapping) {
+    snap_interval = 0;
+  }
+}
+
+function empty() {
+  isThinking = false;
+  osc.amp(0, 0.001);
+  isBlinking = false;
+  isSnapping = false;
+}
+
+function mousePressed() {
+  userStartAudio();
+}
